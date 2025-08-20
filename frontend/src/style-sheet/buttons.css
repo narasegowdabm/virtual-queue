@@ -1,0 +1,68 @@
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Ensure this button is above the pseudo-elements */
+    color: white;
+    padding: 0.4em 0.8em; /* Adjust padding to change button size */
+    cursor: pointer;
+    font-size: 18px; /* Adjust font size to change button size */
+    border-radius: 0.5em;
+    background: #0369a1;
+    border: 1px solid #e8e8e8;
+  }
+
+  .button2:active {
+    color: #041E5B;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #041E5B; /* Default background color */
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1; /* Ensure pseudo-elements are below the button */
+  }
+
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Match positioning of the before pseudo-element */
+    transform: translateX(-50%) scaleY(1) scaleX(1.25); /* Match scaling of the before pseudo-element */
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #041E5B; /* Default background color */
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1; /* Ensure pseudo-elements are below the button */
+  }
+
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #041E5B;
+  }
+
+  .button2:hover:before {
+    top: -35%;
+    background-color: #041E5B; /* Background color on hover */
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  .button2:hover:after {
+    top: -45%;
+    background-color: #041E5B; /* Background color on hover */
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+ 

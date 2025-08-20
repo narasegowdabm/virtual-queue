@@ -1,0 +1,9 @@
+.custom-dropdown .p-dropdown {
+    background-color: white;
+    width: 100%;
+    max-width: 250px;  /* Adjust as needed */
+}
+
+.custom-dropdown .p-dropdown-panel {
+    background-color: white;
+}
